@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'seller.apps.SellerConfig',
     'ad.apps.AdConfig',
     'django.contrib.humanize',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
