@@ -27,6 +27,7 @@
           </div>
           <div class="modal-body">
             <form action="{% url 'login' %}" method="POST">
+              {% csrf_token %}
               <div class="form-group">
                 <input id="email-modal" type="text" placeholder="username" name='username' class="form-control">
               </div>
