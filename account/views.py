@@ -1,6 +1,8 @@
 from django.shortcuts import render,redirect 
 from django.contrib import messages,auth
 from django.contrib.auth.models import User
+from django.contrib.auth import logout
+
 
 # Create your views here.
 
@@ -58,3 +60,10 @@ def registration(request):
 
 def dashboard(request):
   return render(request,'account/dashboard.html')
+
+
+
+
+def logoutUser(request):
+  logout(request)
+  return redirect('home')
